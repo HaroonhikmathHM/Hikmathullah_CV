@@ -8,16 +8,18 @@
 <style>
   body {
     font-family: 'Open Sans', sans-serif;
-    margin: 0;
+    margin: 5px;
     padding: 10px; /* Adjust padding for smaller screens */
     background-size: cover;
-    animation: changeBackgroundImage 4s ease-in-out infinite; /* Adjust the animation duration as needed */
+    animation: changeBackgroundImage 15s ease-in-out infinite; /* Adjust the animation duration as needed */
     color: #333;
   }
 
   header {
     text-align: center;
-    background-color: #004159;
+    background-image: url('https://65designs.com/wp-content/uploads/2020/07/crop.jpg');
+    background: cover;
+    background-position: center;
     color: #fff;
     padding: 30px 20px; /* Adjust padding for smaller screens */
     border-radius: 20px;
@@ -38,15 +40,16 @@
 
   @keyframes changeBackgroundImage {
     0% {
-      background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20190223/ourmid/pngtree-simple-data-smart-technology-background-blue-backgroundlightintelligentstereoscopictechnologydynamicgridbackgroundadvertising-backgroundadvertising-image_72349.jpg'); /* Initial background image */
+      background-image: url('http://getwallpapers.com/wallpaper/full/6/2/e/64177.jpg'); /* Initial background image */
     }
     50% {
-      background-image: url('https://th.bing.com/th/id/R.4e9f9de7f6e9f6de095d0824463eada7?rik=Qvv%2bLP22psUp%2fQ&riu=http%3a%2f%2fwww.alliphonewallpapers.com%2fimages%2fwallpapers%2fbharcyccm.jpg&ehk=ikC5OPWkT76KYO2bQ09z2F%2fwzXHOQBrpHA3O7vJ4V44%3d&risl=&pid=ImgRaw&r=0'); /* Background image at midpoint of the animation */
+      background-image: url('https://c4.wallpaperflare.com/wallpaper/993/621/110/blurred-colorful-vertical-portrait-display-wallpaper-preview.jpg'); /* Background image at midpoint of the animation */
     }
     100% {
-      background-image: url('https://i.pinimg.com/originals/91/5e/1a/915e1ad050fd74e0d594fd2542e95d0e.jpg'); /* Final background image */
+      background-image: url('https://tse1.mm.bing.net/th?id=OIP.lc2KECEh7stZKRf89hvXcwHaJ4&pid=Api&P=0&h=220'); /* Final background image */
     }
   }
+
 
   @keyframes fadeIn {
     from {
@@ -70,7 +73,7 @@
   }
 
   .section {
-    background-color: #dad8d8;
+    background-color: #FBECEB;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     margin-bottom: 20px;
     padding: 20px;
@@ -130,6 +133,7 @@
     white-space: nowrap;
     display: inline-block;
     animation: typing 4s steps(30,end) infinite, changecolor 4s ease-in-out infinite;
+    font-size: 18px;
   }
 
   @media only screen and (max-width: 600px) {
@@ -139,10 +143,6 @@
     }
     
     header h1 {
-      font-size: 20px; /* Adjust font size for smaller screens */
-    }
-
-    header {
       font-size: 20px; /* Adjust font size for smaller screens */
     }
     
