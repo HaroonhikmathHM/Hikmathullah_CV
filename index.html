@@ -9,43 +9,32 @@
   body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
-    padding: 30px;
+    padding: 10px; /* Adjust padding for smaller screens */
     background-size: cover;
     animation: changeBackgroundImage 4s ease-in-out infinite; /* Adjust the animation duration as needed */
-    margin: 0;
     color: #333;
   }
 
-  @media (max-width: 600px {
-    body {
-    }
-  }
-    
   header {
     text-align: center;
     background-color: #004159;
     color: #fff;
-    padding: 50px 20px;
+    padding: 30px 20px; /* Adjust padding for smaller screens */
     border-radius: 20px;
     margin-bottom: 20px;
-    margin-top: 0px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-    hight:auto;
-    width: auto;
   }
+
   header h1 {
-    margin: 0 0 10px 0;
+    margin: 0;
     font-weight: 700;
-    hight: auto;
-    width: auto;
+    font-size: 24px; /* Adjust font size for smaller screens */
   }
+  
   header p {
     margin: 0;
     font-weight: 600;
-    hight: auto;
-    width: auto;
   }
-
 
   @keyframes changeBackgroundImage {
     0% {
@@ -59,7 +48,6 @@
     }
   }
 
-
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -69,17 +57,17 @@
     }
   }
 
-    @keyframes changecolor {
-      0% {
-        color: white;
-      }
-      50% {
-        color: yellow;
-      }
-      100% {
-        color: white
-      }
+  @keyframes changecolor {
+    0% {
+      color: white;
     }
+    50% {
+      color: yellow;
+    }
+    100% {
+      color: white;
+    }
+  }
 
   .section {
     background-color: #dad8d8;
@@ -89,22 +77,27 @@
     border-left: 5px solid #4a90e2;
     border-radius: 10px;
   }
+
   .section-title {
     color: #4a90e2;
     font-size: 20px;
     margin-bottom: 15px;
     font-weight: 700;
   }
+
   .experience, .education, .skills ul {
     list-style-type: none;
     padding: 0;
   }
+
   .item, .skills li {
     margin-bottom: 10px;
   }
+
   .item-title {
     font-weight: 600;
   }
+
   .item-details {
     color: #666;
   }
@@ -123,41 +116,55 @@
   }
 
   .para {
-    margin-bottom: 10px
+    margin-bottom: 10px;
   }
 
   .img {
     animation: fadeIn 5s ease-in-out;
     display: block;
-    float: left;
-    margin-left: 0.5px
+    margin: 0 auto; /* Center align the image */
   }
 
   .textanimation {
     overflow: hidden;
     white-space: nowrap;
     display: inline-block;
-    animation: typing 4s steps(30,end)
-    infinite, changecolor 4s ease-in-out infinite;
+    animation: typing 4s steps(30,end) infinite, changecolor 4s ease-in-out infinite;
   }
 
+  @media only screen and (max-width: 600px) {
+    /* Adjustments for smaller screens */
+    header {
+      padding: 20px 10px; /* Adjust padding for smaller screens */
+    }
+    
+    header h1 {
+      font-size: 20px; /* Adjust font size for smaller screens */
+    }
+    
+    .img {
+      width: 100px; /* Adjust image size for smaller screens */
+      height: 100px; /* Adjust image size for smaller screens */
+    }
   }
 </style> 
 </head>
 <body>
-<head>  <img src="hik.png" alt="Hikmathullah's Photo" width="175" height="175" class="img"> </head>
 <header>
-  <h1 class="textanimation">HAROON MOHAMED HIKMATHULLAH</h1> 
-  <p>IT Officer | Network Administrator class</p>
+  <img src="hik.png" alt="Hikmathullah's Photo" width="175" height="175" class="img">
+  <h1 class="textanimation">HAROON MOHAMED HIKMATHULLAH</h1>
+  <p>IT Officer | Network Administrator | Graphic Designer</p>
 </header>
+
 <section class="section">
   <div class="section-title">Profile</div>
-  <p style="text-align: justify;">Dedicated and technically skilled IT professional with a strong foundation in IT operations and a recent BTEC Higher National Diploma (HND) in Network Engineering. Offers four three of comprehensive experience as an IT Officer, where I have honed my problem-solving skills, technical support capabilities, and a deep understanding of IT systems and operations. Eager to leverage my newly acquired knowledge in networking and security to transition into a Network Administrator role.</p>
+  <p>Dedicated and technically skilled IT professional with a strong foundation in IT operations and a recent BTEC Higher National Diploma (HND) in Network Engineering. Offers three years of comprehensive experience as an IT Officer, where I have honed my problem-solving skills, technical support capabilities, and a deep understanding of IT systems and operations. Eager to leverage my newly acquired knowledge in networking and security to transition into a Network Administrator role.</p>
 
-  <p style="text-align: justify;">My educational journey has equipped me with a robust understanding of network infrastructure, including the design, implementation, and management of wired and wireless networks. Proficient in various networking protocols, network security principles, and best practices, I am well-prepared to take challenges in modern network environments. I possess a strong grasp of network troubleshooting techniques, cybersecurity measures, and the deployment of network solutions that ensure the integrity, availability, and confidentiality of information.</p>
+  <p>My educational journey has equipped me with a robust understanding of network infrastructure, including the design, implementation, and management of wired and wireless networks. Proficient in various networking protocols, network security principles, and best practices, I am well-prepared to take challenges in modern network environments. I possess a strong grasp of network troubleshooting techniques, cybersecurity measures, and the deployment of network solutions that ensure the integrity, availability, and confidentiality of information.</p>
 
-  <p style="text-align: justify;">Passionate about technology and continuous learning, I am committed to applying my skills in a dynamic and challenging setting to contribute to the effective and efficient management of network resources. My ability to work collaboratively, combined with a proactive approach and a keen attention to detail, makes me a valuable asset to any IT team looking to strengthen their network infrastructure and security posture.</p>
+  <p>Passionate about technology and continuous learning, I am committed to applying my skills in a dynamic and challenging setting to contribute to the effective and efficient management of network resources. My ability to work collaboratively, combined with a proactive approach and a keen attention to detail, makes me a valuable asset to any IT team looking to strengthen their network infrastructure and security posture.</p>
 </section>
+
 <section class="section">
   <div class="section-title">Experience</div>
   <ul class="experience">
@@ -171,7 +178,7 @@
     </li>
     <li class="item">
       <div class="item-title">IT Officer</div>
-      <div class="item-details">July 2019 - December 2022 | Los Angeles, USA</div>
+      <div class="item-details">July 2019 - December 2022 | Sammanthurai, Sri Lanka</div>
       <ul>
         <li>Managed the IT and Network infrastructure</li>
         <li>Solved critical problems as an IT Officer</li>
@@ -179,6 +186,7 @@
     </li>
   </ul>
 </section>
+
 <section class="section">
   <div class="section-title">Education</div>
   <ul class="education">
@@ -190,16 +198,17 @@
       <div class="item-title">Core 1: Hardware and Network Troubleshooting</div>
       <div class="item-details">IBM - Coursera | 2023 Dec - 2024 Feb</div>
     </li>
-        <li class="item">
+    <li class="item">
       <div class="item-title">Computer Networking</div>
       <div class="item-details">ILLINOIS TECH - Coursera | 2024 Jan - 2024 Apr</div>
     </li>
-        <li class="item">
+    <li class="item">
       <div class="item-title">Python</div>
       <div class="item-details">Microsoft | 2024 Jan Dec - 2024 Apr</div>
     </li>
   </ul>
 </section>
+
 <section class="section">
   <div class="section-title">Skills</div>
   <ul class="skills">
@@ -210,23 +219,24 @@
     <li>Device Configuration</li>
     <li>Python</li>
   </ul>
-    </ul>
 </section>
+
 <section class="section">
   <div class="section-title">Contact Me</div>
   <ul class="skills">
     <a href="https://www.linkedin.com/in/haroon-hikmath-a035a0195" target="_blank"> 
       <img src="linkedIn-logo-0.png" alt="VISIT MY linkedin" style="vertical-align: middle; width: 80px; height: 26px; margin-right:15px;">
     </a>
-      <a href="mailto:haroonhikmath@gmail.com" target="_blank"> 
+    <a href="mailto:haroonhikmath@gmail.com" target="_blank"> 
       <img src="R (1).png" alt="VISIT MY linkedin" style="vertical-align: middle; width: 30px; height: 20px; margin-right:15px;">
-
     </a>
-      <a href="https://wa.me/+94775536977"> 
+    <a href="https://wa.me/+94775536977"> 
       <img src="R (3).png" alt="Chat on Whatsapp" style="vertical-align: middle; width: 35px; height: 35px; margin-right:15px;">
     </a>
   </ul>
 </section>
-    <p class="item-text">Developed by H.M. Hikmathullah, BTEC HND in Network Engineering(R)</p>
+
+<p class="item-text">Developed by H.M. Hikmathullah, BTEC HND in Network Engineering(R)</p>
+
 </body>
 </html>
